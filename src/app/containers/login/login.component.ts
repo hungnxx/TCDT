@@ -44,9 +44,12 @@ export class LoginComponent implements OnInit {
         this.isLoginFailed = true;
       }
     );
+
+
   }
 
   reloadPage(): void {
-    window.location.reload();
+    window.location.href = "/home";
+    //window.location.reload();
   }
 }

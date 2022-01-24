@@ -30,6 +30,10 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { vi_VN } from 'ng-zorro-antd/i18n';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { AnnualEstimatAnd3YearPlanComponent } from './containers/annual-estimat-and3-year-plan/annual-estimat-and3-year-plan.component';
+import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 
 registerLocaleData(vi);
 
@@ -61,9 +65,10 @@ registerLocaleData(vi);
     NzDatePickerModule,
     NzDropDownModule,
     NzButtonModule,
-    FormControl,
-    FormGroup,
-    Validators
+    NzImageModule,
+    NzSelectModule,
+    NzInputModule,
+    NzInputNumberModule
   ],
   providers: [authInterceptorProviders, { provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 <div id="app">
-  <nz-layout>
+  <!-- <nz-layout>
     <nz-sider nzCollapsible nzWidth="200px">
       <div class="logo"></div>
       <ul nz-menu nzTheme="dark" nzMode="inline" id="layout-sider">
@@ -73,5 +73,559 @@
       </nz-content>
       <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
     </nz-layout>
-  </nz-layout>
+  </nz-layout> -->
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Xây dựng KHLCNT cung cấp vật tư</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img src="assets/img/logo.svg" alt="">
+          </div>
+          <h3>
+            <span>Quản lý nghiệp vụ</span>
+            <small>Tổng cục Dự trữ Nhà nước</small>
+          </h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#">
+              <span>
+                <span class="icons">
+                  <i class="icon htvbdh_home1"></i>
+                </span>
+                <span>Trang chủ</span>
+              </span>
+            </a>
+          </li>
+
+          <i>
+            <a href="#pageSubmenutt" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <span>
+                <span class="icons">
+                  <i class="icon htvbdh_quan-ly-hang"></i>
+                </span>
+                <span>Dự toán NSNN hàng năm và KHTC 03 năm</span>
+              </span>
+
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenutt">
+              <li>
+                <a href="dtNSNNvaKHTC3nam">
+                  <span>
+                    Tìm kiếm
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </i>
+
+          <i>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <span>
+                <span class="icons">
+                  <i class="icon htvbdh_quan-ly-hang"></i>
+                </span>
+                <span>Quản lý hàng DTQG</span>
+              </span>
+
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="#qllcncctptmtt" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                  <span>Quản lý lựa chọn nhà cung cấp theo phương thức đấu thầu</span>
+                </a>
+                <ul class="collapse list-unstyled" id="qllcncctptmtt">
+                  <li>
+                    <a href="Quản lý đề xuất KHLCNT cung cấp lương thực, muối.html">
+                      <span>Quản lý đề xuất KHLCNT cung cấp lương thực, muối</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Xây dựng KHLCNT cung cấp vật tư.html" class="active">
+                      <span>Xây dựng KHLCNT cung cấp vật tư</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Quản lý QĐ phê duyệt KHLCNT lương thực, muối</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        Quản lý Quyết định điều chỉnh phê duyệt kế hoạch lựa chọn nhà thầu lương thực, muối
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>
+                    Quản lý lựa chọn nhà cung cấp theo phương thức mua trực tiếp
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>Quản lý nhập hàng DTQG</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý lưu kho hàng DTQG</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý lựa chọn đơn vị mua hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý xuất hàng DTQG</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý điều chuyển hàng DTQG</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý xuất khác</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý xuất thanh lý, tiêu hủy</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý phiếu nhập, xuất kho hàng DTQG của các Bộ ngành</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Quản lý lựa chọn nhà cung cấp theo phương thức mua trực tiếp</span>
+                </a>
+              </li>
+            </ul>
+          </i>
+          <li>
+            <a href="#">
+              <span>
+                <span class="icons">
+                  <i class="icon htvbdh_city_buildings"></i>
+                </span>
+                <span>Quản lý kho tàng</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <span class="icons">
+                  <i class="icon htvbdh_baocao"></i>
+                </span>
+                <span>Tổng hợp báo cáo</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <p id="amani">jQueryScript</p>
+                </li>
+                <li>
+                    <a href="https://www.jqueryscript.net/" class="article">jQueryScript.Net</a>
+                </li>
+            </ul> -->
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="demo2">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="vidu" tabindex="-1" aria-labelledby="vidu" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vidu">Chọn hàng hóa vật tư</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+          </div>
+          <div class="modal-body">
+            <div class="khungtimkiem">
+              <div class="row">
+                <div class="col-md-12 form-inline">
+                  <div class="form-group">
+                    <label>Tên hàng hóa</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" id="button-addon2">
+                          <i class="icon htvbdh_search" aria-hidden="true"></i>
+                          Tìm kiếm
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-responsive-sm">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                      <tr>
+                        <th width="40px">
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                          </div>
+                        </th>
+                        <th scope="col" width="30%">Mã hàng hóa</th>
+                        <th scope="col">Tên hàng hóa</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                          </div>
+                        </td>
+                        <td>
+                          25/BC-BLDTBXH
+                        </td>
+                        <td>
+                          Bút xóa lỗi lấm
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                          </div>
+                        </td>
+                        <td>
+                          25/BC-BLDTBXH
+                        </td>
+                        <td>
+                          Bút xóa lỗi lấm
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                          </div>
+                        </td>
+                        <td>
+                          25/BC-BLDTBXH
+                        </td>
+                        <td>
+                          Bút xóa lỗi lấm
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <!-- justify-content-end -->
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Đóng</button>
+            <button type="button" class="btn btn-primary btn-sm">Đồng ý</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal themmoi-->
+    <div class="modal fade" id="themmoi" tabindex="-1" aria-labelledby="themmoi" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="themmoititle">Thêm mới xây dựng KHLCNT cung cấp vật tư</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <h5 class="card-title pointer" data-toggle="collapse" data-target="#ttcdx" aria-expanded="true"
+                aria-controls="ttcdx">
+                <span>
+                  <i class="icon htvbdh_select-icon"></i>
+                  Thông tin chung đề xuất
+                </span>
+              </h5>
+              <div class="row collapse show" id="ttcdx">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Số đề xuất</label>
+                    <input type="text" class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Ngày đề xuất</label>
+                    <input type="text" class="form-control form-control-sm datepicker">
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> QĐ giao chỉ tiêu KH năm</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Kế hoạch dự toán năm được giao</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Loại hàng DTQG</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Mã hàng DTQG</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Tiêu chuẩn kỹ thuật</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Tổng số lượng</label>
+                    <input type="text" class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label><span class="text-danger">*</span> Đơn vị tính</label>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary border-left-0" type="button" data-toggle="modal"
+                          data-target="#vidu">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Về việc</label>
+                    <textarea class="form-control form-control-sm" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="card-title">
+                    <span>Danh sách gói thầu</span>
+                  </h5>
+                  <div class="table-responsive-sm">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Tên gói thầu</th>
+                          <th scope="col">Số hiệu gói thầu</th>
+                          <th scope="col">Số lượng</th>
+                          <th scope="col">Đơn vị tính</th>
+                          <th scope="col">Đơn giá trước thuế</th>
+                          <th scope="col">Đơn giá sau thuế</th>
+                          <th scope="col">Thành tiền trước thuể</th>
+                          <th scope="col">Thành tiền sau thuể</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Gói thầu A</td>
+                          <td>1</td>
+                          <td>100</td>
+                          <td>bộ</td>
+                          <td>120</td>
+                          <td>120</td>
+                          <td>12000</td>
+                          <td>12000</td>
+                        </tr>
+                        <tr>
+                          <td>Gói thầu B</td>
+                          <td>1</td>
+                          <td>100</td>
+                          <td>bộ</td>
+                          <td>120</td>
+                          <td>120</td>
+                          <td>12000</td>
+                          <td>12000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="row justify-content-end">
+                    <div class="col-md-4">
+                      <div class="form-group tong">
+                        <label>Tổng</label>
+                        <input type="text" class="form-control form-control-sm">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Đóng</button>
+            <button type="button" class="btn btn-primary btn-sm">Đồng ý</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal confirm-->
+    <div class="modal fade confirm" id="confirm" data-backdrop="static" tabindex="-1" aria-labelledby="confirm"
+      aria-hidden="true">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header flex-column">
+            <div class="icon-box">
+              <i class="icon htvbdh_dau-x2"></i>
+            </div>
+            <h4 class="modal-title w-100">Bạn chắc chắn muốn xóa?</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body">
+            <p>Bạn có thực sự muốn xóa các bản ghi này không? <br /> Không thể hoàn tác quá trình này.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Đóng</button>
+            <button type="button" class="btn btn-primary btn-sm">Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal confirm-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="../assets/js/demo.js" type="text/javascript"></script>
+  </body>
+
+  </html>
 </div>

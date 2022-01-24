@@ -9,6 +9,7 @@ import { BoardUserComponent } from './containers/board-user/board-user.component
 import { BoardModeratorComponent } from './containers/board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './containers/board-admin/board-admin.component';
 import { LayoutComponent } from './layout/layout.component';
+import { AnnualEstimatAnd3YearPlanComponent } from './containers/annual-estimat-and3-year-plan/annual-estimat-and3-year-plan.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'mod', component: BoardModeratorComponent },
   // { path: 'admin', component: BoardAdminComponent },
   { path: 'admin', component: LayoutComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'dtNSNNvaKHTC3nam', component: AnnualEstimatAnd3YearPlanComponent },
 ];
 
 @NgModule({
